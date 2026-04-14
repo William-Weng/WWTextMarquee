@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		81C947ED2F8E2BBF00CB6659 /* WWTextMarquee in Frameworks */ = {isa = PBXBuildFile; productRef = 81C947EC2F8E2BBF00CB6659 /* WWTextMarquee */; };
+		81E2E0062F8E342300FA6E0E /* WWTextMarquee in Frameworks */ = {isa = PBXBuildFile; productRef = 81E2E0052F8E342300FA6E0E /* WWTextMarquee */; };
+		81E2E0092F8E369100FA6E0E /* WWTextMarquee in Frameworks */ = {isa = PBXBuildFile; productRef = 81E2E0082F8E369100FA6E0E /* WWTextMarquee */; };
 		81EAB37B2F8E0A0A0057B447 /* WWTextMarquee in Frameworks */ = {isa = PBXBuildFile; productRef = 81EAB37A2F8E0A0A0057B447 /* WWTextMarquee */; };
 /* End PBXBuildFile section */
 
@@ -41,7 +42,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				81C947ED2F8E2BBF00CB6659 /* WWTextMarquee in Frameworks */,
+				81E2E0092F8E369100FA6E0E /* WWTextMarquee in Frameworks */,
+				81E2E0062F8E342300FA6E0E /* WWTextMarquee in Frameworks */,
 				81EAB37B2F8E0A0A0057B447 /* WWTextMarquee in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -86,7 +88,8 @@
 			name = Example;
 			packageProductDependencies = (
 				81EAB37A2F8E0A0A0057B447 /* WWTextMarquee */,
-				81C947EC2F8E2BBF00CB6659 /* WWTextMarquee */,
+				81E2E0052F8E342300FA6E0E /* WWTextMarquee */,
+				81E2E0082F8E369100FA6E0E /* WWTextMarquee */,
 			);
 			productName = Example;
 			productReference = 817EE1FE2EB1FA050036B57C /* Example.app */;
@@ -117,7 +120,7 @@
 			mainGroup = 817EE1F52EB1FA050036B57C;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				81C947EB2F8E2BBF00CB6659 /* XCRemoteSwiftPackageReference "WWTextMarquee" */,
+				81E2E0072F8E369100FA6E0E /* XCRemoteSwiftPackageReference "WWTextMarquee" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 817EE1FF2EB1FA050036B57C /* Products */;
@@ -361,7 +364,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		81C947EB2F8E2BBF00CB6659 /* XCRemoteSwiftPackageReference "WWTextMarquee" */ = {
+		81E2E0072F8E369100FA6E0E /* XCRemoteSwiftPackageReference "WWTextMarquee" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/William-Weng/WWTextMarquee";
 			requirement = {
@@ -372,9 +375,13 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		81C947EC2F8E2BBF00CB6659 /* WWTextMarquee */ = {
+		81E2E0052F8E342300FA6E0E /* WWTextMarquee */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 81C947EB2F8E2BBF00CB6659 /* XCRemoteSwiftPackageReference "WWTextMarquee" */;
+			productName = WWTextMarquee;
+		};
+		81E2E0082F8E369100FA6E0E /* WWTextMarquee */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 81E2E0072F8E369100FA6E0E /* XCRemoteSwiftPackageReference "WWTextMarquee" */;
 			productName = WWTextMarquee;
 		};
 		81EAB37A2F8E0A0A0057B447 /* WWTextMarquee */ = {

@@ -53,6 +53,7 @@ dependencies: [
 | `initPanel(_:)` | 初始化LED背景，可以調整需要的寬度大小。 |
 | `start(text:offsetY:)` | 建立並啟用 `CADisplayLink`，開始畫面更新。 |
 | `stop()` | 使 `CADisplayLink` 失效並重設時間參數。 |
+| `removeFromSuperview()` | 停止畫面更新，並且移除跑馬燈。 |
 
 ## 🔍 運作原理
 
@@ -69,9 +70,10 @@ import UIKit
 import WWTextMarquee
 
 final class ViewController: UIViewController {
-
-    private let text = "Hello, こんにちは, 안녕하세요, 哈囉"
     
+    private let text = "Hello, こんにちは, 안녕하세요, 哈囉"
+    private var textMarquee: WWTextMarquee?
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -84,10 +86,9 @@ final class ViewController: UIViewController {
             characterGap: 2
         )
         
-        let textMarquee = WWTextMarquee(config: config)
-        
-        textMarquee.initPanel(in: view, columns: 128)
-        textMarquee.start(text: text, offsetY: 60)
+        textMarquee = .init(config: config)
+        textMarquee?.initPanel(in: view, columns: 128)
+        textMarquee?.start(text: text, offsetY: 60)
     }
 }
 ```

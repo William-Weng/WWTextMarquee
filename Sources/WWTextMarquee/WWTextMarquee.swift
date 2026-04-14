@@ -32,9 +32,9 @@ public class WWTextMarquee {
     public init(config: Configuration) {
         rasterizer = .init(config: config)
     }
-    
+        
     deinit {
-        stopMarquee()
+        removeFromSuperview()
     }
 }
 
@@ -78,6 +78,12 @@ public extension WWTextMarquee {
     /// 停止執行
     func stop() {
         stopMarquee()
+    }
+    
+    /// 移除跑馬燈
+    func removeFromSuperview() {
+        stopMarquee()
+        containerView.removeFromSuperview()
     }
 }
 

@@ -11,6 +11,7 @@ import WWTextMarquee
 final class ViewController: UIViewController {
     
     private let text = "Hello, こんにちは, 안녕하세요, 哈囉"
+    private var textMarquee: WWTextMarquee?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,10 +25,9 @@ final class ViewController: UIViewController {
             characterGap: 2
         )
         
-        let textMarquee = WWTextMarquee(config: config)
-        
-        textMarquee.initPanel(in: view, columns: 128)
-        textMarquee.start(text: text, offsetY: 60)
+        textMarquee = .init(config: config)
+        textMarquee?.initPanel(in: view, columns: 128)
+        textMarquee?.start(text: text, offsetY: 60)
     }
 }
 
