@@ -14,6 +14,10 @@ It uses [WWTextRasterizer](https://github.com/William-Weng/WWTextRasterizer) to 
 
 ## 🧩 [效果示意](https://peterpanswift.github.io/iphone-bezels/)
 
+![](https://github.com/user-attachments/assets/602a5335-2818-46e6-a62e-5247a6b26bf1)
+
+https://github.com/user-attachments/assets/68fb9a9b-c16c-4834-87f5-328ca4ca5098
+
 ## ✨ [特點](https://swiftpackageindex.com/William-Weng)
 
 - 將文字轉換為 LED 點陣畫面。  
