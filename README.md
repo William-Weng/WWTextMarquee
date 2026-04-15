@@ -14,9 +14,9 @@ It uses [WWTextRasterizer](https://github.com/William-Weng/WWTextRasterizer) to 
 
 ## 🧩 [效果示意](https://peterpanswift.github.io/iphone-bezels/)
 
-![](https://github.com/user-attachments/assets/602a5335-2818-46e6-a62e-5247a6b26bf1)
+![](https://github.com/user-attachments/assets/903dbd3f-9b03-4404-9543-6b31b8a2b518)
 
-https://github.com/user-attachments/assets/68fb9a9b-c16c-4834-87f5-328ca4ca5098
+https://github.com/user-attachments/assets/0e6b86f6-9e95-485f-9171-a3757b67e092
 
 ## ✨ [特點](https://swiftpackageindex.com/William-Weng)
 

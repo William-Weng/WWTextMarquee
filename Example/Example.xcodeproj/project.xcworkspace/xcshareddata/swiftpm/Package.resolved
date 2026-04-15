@@ -6,8 +6,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/William-Weng/WWTextMarquee",
       "state" : {
-        "revision" : "3129ddefdd93c9bd8ffa04cf232bb45a8da9c036",
-        "version" : "1.0.1"
+        "revision" : "4695a051cf86e9aa7324b3183796fec7a2d99de8",
+        "version" : "1.0.2"
       }
     },
     {
