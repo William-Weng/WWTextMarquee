@@ -12,10 +12,13 @@ let package = Package(
         .library(name: "WWTextMarquee", targets: ["WWTextMarquee"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/William-Weng/WWTextRasterizer", .upToNextMinor(from: "1.2.0"))
+        .package(url: "https://github.com/William-Weng/WWTextRasterizer", .upToNextMinor(from: "1.2.0")),
     ],
     targets: [
-        .target(name: "WWTextMarquee", dependencies: ["WWTextRasterizer"], resources: [.copy("Privacy")]),
+        .target(name: "WWTextMarquee",
+                dependencies: [.product(name: "WWTextRasterizer", package: "WWTextRasterizer")],
+                resources: [.copy("Privacy")],
+        ),
     ],
     swiftLanguageVersions: [
         .v5

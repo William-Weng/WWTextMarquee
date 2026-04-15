@@ -31,7 +31,7 @@ https://github.com/user-attachments/assets/68fb9a9b-c16c-4834-87f5-328ca4ca5098
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/William-Weng/WWTextMarquee.git", from: "1.0.0")
+    .package(url: "https://github.com/William-Weng/WWTextMarquee.git", from: "1.0.2")
 ]
 ```
 
@@ -51,9 +51,11 @@ dependencies: [
 | 函式名稱 | 說明 |
 |-----------|------|
 | `initPanel(_:)` | 初始化LED背景，可以調整需要的寬度大小。 |
-| `start(text:offsetY:)` | 建立並啟用 `CADisplayLink`，開始畫面更新。 |
+| `start(text:verticalAlignment:)` | 建立並啟用 `CADisplayLink`，開始畫面更新。 |
 | `stop()` | 使 `CADisplayLink` 失效並重設時間參數。 |
 | `removeFromSuperview()` | 停止畫面更新，並且移除跑馬燈。 |
+| `setOrigin(_:)` | 設定面板位置。 |
+| `setCenter(_:)` | 設定面板中心。 |
 
 ## 🔍 運作原理
 
@@ -73,7 +75,7 @@ final class ViewController: UIViewController {
     
     private let text = "Hello, こんにちは, 안녕하세요, 哈囉"
     private var textMarquee: WWTextMarquee?
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -86,9 +88,13 @@ final class ViewController: UIViewController {
             characterGap: 2
         )
         
-        textMarquee = .init(config: config)
-        textMarquee?.initPanel(in: view, columns: 128)
-        textMarquee?.start(text: text, offsetY: 60)
+        let marquee: WWTextMarquee = .init(config: config)
+        
+        marquee.initPanel(in: view, columns: 128, rows: 64)
+        marquee.setCenter(view.center)
+        marquee.start(text: text)
+
+        self.textMarquee = marquee
     }
 }
 ```

@@ -25,9 +25,13 @@ final class ViewController: UIViewController {
             characterGap: 2
         )
         
-        textMarquee = .init(config: config)
-        textMarquee?.initPanel(in: view, columns: 128)
-        textMarquee?.start(text: text, offsetY: 60)
+        let marquee: WWTextMarquee = .init(config: config)
+        
+        marquee.initPanel(in: view, columns: 128, rows: 64)
+        marquee.setCenter(view.center)
+        marquee.start(text: text)
+
+        self.textMarquee = marquee
     }
 }
 
